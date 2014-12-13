@@ -14,6 +14,9 @@
 !Makefile
 !makefile
 
+# Unignore PNGs
+!*.png
+
 # Unignore .gitignore
 !.gitignore
 

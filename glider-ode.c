@@ -18,8 +18,8 @@
 #include <stdio.h>
 #include <math.h>
 
-#include </home/jharvard/Downloads/gsl-1.16/gsl/gsl_errno.h>
-#include </home/jharvard/Downloads/gsl-1.16/gsl/gsl_odeiv2.h>
+#include </usr/include/gsl/gsl_errno.h>
+#include </usr/include/gsl/gsl_odeiv2.h>
 
 int func (double t, const double y[], double f[], 
 	  void *params) 
