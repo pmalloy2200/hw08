@@ -20,3 +20,20 @@ Makefile. Commands are as follows and should be self-explanatory.
 - make clean
 - make veryclean
 
+### Graphs
+*For all: Flight distance is on x axis.*
+
+
+##### Velocity vs. Flight Distance
+![Velocity vs. Flight Distance]
+(https://raw.githubusercontent.com/pmalloy2200/hw08/master/velocity.png)
+
+##### Angle vs. Flight Distance
+![Angle vs. Flight Distance]
+(https://raw.githubusercontent.com/pmalloy2200/hw08/master/angle.png)
+
+##### Initial Altitude vs. Flight Distance
+![Alt. vs. Flight Distance]
+(https://raw.githubusercontent.com/pmalloy2200/hw08/master/altitude.png)
+
+
