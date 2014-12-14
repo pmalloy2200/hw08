@@ -6,16 +6,17 @@
 
 int gliderdemo (double v, double a, double x, double y);
 
-int main(void)
+int
+main (void)
 {
     double v = 2., a, x = 0., y = 2.;
-    
-    
-for (a = -3.14159/3. ; a <= 3.14159/3.; a += 3.14159/3./20.)
+
+
+    for (a = -3.14159 / 3.; a <= 3.14159 / 3.; a += 3.14159 / 3. / 20.)
     {
-    gliderdemo(v, a, x, y);
+        gliderdemo (v, a, x, y);
     }
-    
- return 0;
-    
+
+    return 0;
+
 }

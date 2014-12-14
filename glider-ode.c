@@ -21,22 +21,21 @@
 #include </usr/include/gsl/gsl_errno.h>
 #include </usr/include/gsl/gsl_odeiv2.h>
 
-int func (double t, const double y[], double f[], 
-	  void *params) 
+int
+func (double t, const double y[], double f[], void *params)
 {
-  /*
-   * y[0] - velocity, v
-   * y[1] - angle. theta
-   * y[2] - horizontal coordinate, x
-   * y[3] - altitude, y
-   */
-  double R = *(double *) params;
+    /*
+     * y[0] - velocity, v
+     * y[1] - angle. theta
+     * y[2] - horizontal coordinate, x
+     * y[3] - altitude, y
+     */
+    double R = *(double *) params;
 
-  f[0] = -sin(y[1]) - y[0]*y[0]/R;
-  f[1] = -cos(y[1])/y[0] + y[0];
-  f[2] = y[0]*cos(y[1]);
-  f[3] = y[0]*sin(y[1]);
+    f[0] = -sin (y[1]) - y[0] * y[0] / R;
+    f[1] = -cos (y[1]) / y[0] + y[0];
+    f[2] = y[0] * cos (y[1]);
+    f[3] = y[0] * sin (y[1]);
 
-  return GSL_SUCCESS;
+    return GSL_SUCCESS;
 }
-
