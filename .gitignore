@@ -17,6 +17,9 @@
 # Unignore PNGs
 !*.png
 
+# Unignore GPLs
+!*.gpl
+
 # Unignore .gitignore
 !.gitignore
 

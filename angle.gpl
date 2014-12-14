@@ -1,0 +1,7 @@
+unset key
+set style data line
+
+set term png
+set o "angle.png"
+
+p  [-1.5:1.5] [0:] "angl" u 2:5
